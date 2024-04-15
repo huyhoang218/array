@@ -1,5 +1,5 @@
 let x = 0
-let arr = Array()
+let arr = []
 function addElementToArr(){
     arr[x] = document.getElementById('textValue').value
     alert('Element: ' + arr[x] + ' added at index ' + x)
