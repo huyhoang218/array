@@ -116,20 +116,21 @@ function enterArray(num, arr) {
 
 //Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
 
-let num, arr = []
-enterArray(num, arr)
-let len = arr.length
-let max = 0
-for (let i = 0; i < len - 1; i++) {
-    max = i
-    for (let j = i + 1; j < len; j++) {
-        if(arr[j] > arr[max]){
-            max = j
-        }
-    }
-    let temp = arr[i]
-    arr[i] = arr[max]
-    arr[max] = temp
-}
-console.log(arr)
+// let num, arr = []
+// enterArray(num, arr)
+// let len = arr.length
+// let max = 0
+// for (let i = 0; i < len - 1; i++) {
+//     max = i
+//     for (let j = i + 1; j < len; j++) {
+//         if(arr[j] > arr[max]){
+//             max = j
+//         }
+//     }
+//     let temp = arr[i]
+//     arr[i] = arr[max]
+//     arr[max] = temp
+// }
+// console.log(arr)
+
 //Bai 9 tuong tu
