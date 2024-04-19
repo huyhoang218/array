@@ -80,10 +80,9 @@ function enterArray(num, arr) {
 //Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi
 
 // let str = prompt('Enter a string')
-// let arr = [], count = 0
-// arr = str
-// for (let i = 1; i < arr.length; i++) {
-//     if(arr[i-1] == '-' && arr[i] > 0) count ++
+// let count = 0
+// for (let i = 1; i < str.length; i++) {
+//     if(str[i-1] == '-' && str[i] > 0) count ++
 // }
 // console.log('Tong so nguyen am',count)
 
