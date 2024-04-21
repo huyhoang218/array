@@ -1,18 +1,18 @@
-function checkNumber(num){
-    if (num <= 0 || isNaN(num)) return false
+function checkNumber(number){
+    if (number <= 0 || isNaN(number)) return false
     else return true
 }
-function checkInt(num){
-    if(isNaN(num)) return false
+function checkInt(number){
+    if(isNaN(number)) return false
     else return true
 }
-function enterArray(num, arr) {
+function enterArray(number, array) {
     do {
-        num = +prompt('Nhap so luong phan tu cua mang')
-    } while (!checkNumber(num))
-    for (let i = 0; i < num; i++) {
-        arr[i] = +prompt('Nhap phan tu ' + i)
-        if (!checkInt(arr[i])) arr[i] = +prompt('Nhap lai phan tu ' + i)
+        number = +prompt('Nhap so luong phan tu cua mang')
+    } while (!checkNumber(number))
+    for (let i = 0; i < number; i++) {
+        array[i] = +prompt('Nhap phan tu ' + i)
+        if (!checkInt(array[i])) array[i] = +prompt('Nhap lai phan tu ' + i)
     }
 }
 //Bài 1- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử. Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.

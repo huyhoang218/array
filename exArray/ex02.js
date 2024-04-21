@@ -15,7 +15,7 @@
 
 //Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược.
 // Ví dụ, nếu một mảng chứa các ký tự  [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là "162csc"
-function getArray(num, arr = []){
+function getArray(num, arr){
     num = +prompt('Nhap so luong phan tu mang')
     let print = 0
     for (let i = 0; i < num; i++) {
