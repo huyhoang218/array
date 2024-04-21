@@ -1,31 +1,7 @@
-function changeValue(){
-    let h = 2
-    data = ''
-    let posX = +prompt('Enter the position of X:')
-    let posY = +prompt('Enter the position of Y:')
-    if(h % 2 === 0){
-        board[posX][posY] = 'o'
-    }else {
-        board[posX][posY] = 'x'
-    }
-    h++
-    for (let i = 0; i < 5; i++) {
-        data += '<br>'
-        for (let j = 0; j < 5; j++) {
-            data += board[i][j] + '&nbsp;&nbsp;'
-        }
-    }
-    document.getElementById('caroGame').innerHTML = data
-}
-
-function handleWinLose(){
-
-}
-
+let data = ""
 let board = []
-let data = ''
 for (let i = 0; i < 5; i++) {
-    board[i] = ['(.)', '(.)', '(.)', '(.)', '(.)']
+    board[i] = [0, 0, 0, 0, 0]
 }
 for (let i = 0; i < 5; i++) {
     data += '<br>'
@@ -34,3 +10,17 @@ for (let i = 0; i < 5; i++) {
     }
 }
 document.getElementById('caroGame').innerHTML = data
+
+function changeValue() {
+    let posX = prompt('X: ')
+    let posY = prompt('y: ')
+    data = ""
+    board[posX][posY] = "x"
+    for (let i = 0; i < 5; i++) {
+        data += '<br>'
+        for (let j = 0; j < 5; j++) {
+            data += board[i][j] + '&nbsp;&nbsp;&nbsp;&nbsp;'
+        }
+    }
+    document.getElementById('caroGame').innerHTML = '<hr/>' + data
+}
